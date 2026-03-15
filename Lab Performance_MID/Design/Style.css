@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    width: 380px;
+    padding: 30px;
+    border: 2px solid black;
+    border-radius: 25px; 
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0 15px;
+    margin: 0 auto; 
+    text-align: center;
+    float: none;
+    width: auto;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 8px; 
+    box-sizing: border-box;
+}
+
+input[readonly] {
+    background-color: #f4f4f4;
+    cursor: not-allowed;
+}
