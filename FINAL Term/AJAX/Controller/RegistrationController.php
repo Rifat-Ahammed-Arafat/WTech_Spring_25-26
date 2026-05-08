@@ -57,7 +57,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
             $database = new db();
             $connection = $database->connection();
-            $result = $database->signup($connection,"users", $name, $password, $path);
+            $result = $database->WithSQLInjection($connection,"users", $name, $password, $path);
             if($result)
                 {
                     Header("Location:../View/Login.php ");
